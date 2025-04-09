@@ -1,8 +1,9 @@
-Formatting tags
-semantics tags
-list in html
-tables in html
-input in html
-accessability in html
+cross reference html
+inputs revise
+forms in  html
+get and post method
+fieldset and legend
+web api (html dom, local and session storage)
 
-task-1
+
+task-2 (tourism website structure)
