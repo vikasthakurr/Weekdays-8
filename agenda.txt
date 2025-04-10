@@ -1,9 +1,10 @@
-cross reference html
-inputs revise
-forms in  html
-get and post method
-fieldset and legend
-web api (html dom, local and session storage)
+intro to css
+type of css
+css selector
+color in css
+css fonts
+css text property
+css unit
 
 
-task-2 (tourism website structure)
+Task-3

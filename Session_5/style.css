@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap");
+
+h1 {
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+
+
+
+  
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  line-height: 50px;
+  text-shadow: 2px 2px 5px red;
+  color: green;
+}
