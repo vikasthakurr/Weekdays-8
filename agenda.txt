@@ -1,10 +1,9 @@
-intro to css
-type of css
-css selector
-color in css
-css fonts
-css text property
-css unit
+css image, background
+filter property
+margin,padding border
+box-sizing (border-box, content-box)
+flex box in css
+all property of flex box
 
 
-Task-3
+task-3 painting

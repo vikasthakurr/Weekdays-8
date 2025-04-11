@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rothko Painting</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #8f0401;
+        margin-bottom: 20px;
+      }
+
+      .frame {
+        border: 30px solid black;
+        border-radius: 9px;
+        width: 400px; 
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4d0f00; 
+        
+      }
+
+      .canvas {
+        height: 500px;
+        background-color: #4d0f00;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* border: 10px solid white; */
+        /* border-radius: 8px; */
+        /* outline: 5px solid white; */
+      }
+
+      .one,
+      .two,
+      .three {
+        width: 370px;
+        border-radius: 7px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .one {
+        height: 140px;
+        background-color: #efb762;
+      }
+
+      .two {
+        height: 150px;
+        background-color: #8f0401;
+      }
+
+      .three {
+        height: 140px;
+        background-color: #b20403;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rothko Painting</h1>
+    <div class="frame">
+      <div class="canvas">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </div>
+  </body>
+</html>
