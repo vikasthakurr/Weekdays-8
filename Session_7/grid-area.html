@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+
+    <style>
+      .container {
+        width: 700px;
+        height: 700px;
+        background-color: beige;
+        display: grid;
+        gap: 5px;
+        grid-template-areas: "header header login" "side main main" "footer footer footer";
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+      }
+      .header {
+        grid-area: header;
+      }
+      .login {
+        grid-area: login;
+      }
+      .side {
+        grid-area: side;
+      }
+
+      .main {
+        grid-area: main;
+      }
+      .footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box header">Header</div>
+      <div class="box login">Login</div>
+      <div class="box side">Side-Bar</div>
+      <div class="box main">Main</div>
+      <div class="box footer">Footer</div>
+    </div>
+  </body>
+</html>

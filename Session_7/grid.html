@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+
+    <style>
+      .container {
+        width: 700px;
+        height: 700px;
+        background-color: beige;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+      }
+      .header{
+        grid-column: 1/3;
+        /* grid-column-end: 3; */
+      }
+      .side{
+        grid-row: 2/3;
+        /* grid-row-end: 4; */
+      }
+      .main{
+        grid-column: 2/4;
+      }
+      .footer{
+        grid-column: 1/4;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="box header">Header</div>
+      <div class="box login">Login</div>
+      <div class="box side">Side-Bar</div>
+      <div class="box main">Main</div>
+      <div class="box footer">Footer</div>
+    </div>
+  </body>
+</html>
+
+<!-- The `display` property in CSS is used to control how an HTML element is displayed on a web page. When it comes to the `display: grid` property, it is used to create a grid layout, which allows you to arrange elements in rows and columns, making it easier to create complex layouts. -->
+
+<!-- 1. `display: grid;`: This property is used to create a grid container. Any direct children of this container become grid items. By default, the grid container has one grid track in each row and column.
+
+2. `grid-template-columns`: Specifies the size of the columns in the grid. You can use values like fixed sizes (e.g., `100px`), relative sizes (e.g., `1fr`), or a combination of both (e.g., `repeat(3, 1fr 2fr)`).
+
+3. `grid-template-rows`: Similar to `grid-template-columns`, but for defining the size of rows in the grid.
+
+
+4. `gap` or `grid-row-gap` and `grid-column-gap`: These properties specify the gap (spacing) between rows and columns in the grid. You can use values like `px`, `em`, or percentages.
+
+
+5. `justify-items` and `align-items`: These properties control how grid items are aligned within their grid cells along the row and column axes, respectively.
+
+6. `justify-content` and `align-content`: These properties control how the grid as a whole is aligned within the grid container along the row and column axes, respectively. -->
