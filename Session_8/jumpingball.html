@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 300px;
+        background-color: beige;
+      }
+      .ball {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: jump;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        /* animation: jump 3s infinite; */
+        /* animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-fill-mode: both;
+        animation-play-state: running;
+        animation-direction: normal; */
+
+      }
+
+      @keyframes jump{
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(100px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ball">Test ball</div>
+    </div>
+  </body>
+</html>

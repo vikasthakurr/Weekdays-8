@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 600px;
+        height: 5000px;
+        background-color: beige;
+        position: relative;
+      }
+      .box {
+        background-color: red;
+        padding: 15px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box-1{
+        /* position: static;
+        top: 10px;
+        left: 10px */
+      }
+      .box-2{
+        /* position: relative;
+        top: 30px; */
+        /* left: 30px; */
+        /* right: 40px; */
+      }
+      .box-3{
+        /* position: absolute;
+        background-color: blue;
+        top: 20%; */
+      }
+      .box-4{
+        /* position: fixed;
+        background-color: blue;
+        left: 50%; */
+      }
+      .box-5{
+        position: sticky;
+        background-color: blue;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">static</div>
+      <div class="box box-2">relative</div>
+      <div class="box box-3">absolute</div>
+      <div class="box box-4">fixed</div>
+      <div class="box box-5">sticky</div>
+    </div>
+  </body>
+</html>
+
+
+<!-- document link -->
+<!-- https://docs.google.com/document/d/1aHukHz60ppWAK3JeNAk1JJPDwOMg4og74MWrPW3KhcE/edit?tab=t.0 -->

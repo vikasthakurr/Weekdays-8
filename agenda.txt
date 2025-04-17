@@ -1,6 +1,3 @@
-Display Grid (Grid cell,grid track (container props:gap, template row and column, justify,align-content(stretch), align items))
-(child props: justify and align self, grid Colum and row start and end, grid area)"
 Position Property (Static, relative, absolute, fixed and sticky)
-
-task-3 layout designing
-
+Keyframe for animation( animation name, duration, timing function, iteration count,direction) transition
+Media Query (@media min & max width, min & max height, orientation: landscape and portrait)
