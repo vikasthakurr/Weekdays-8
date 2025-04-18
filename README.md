@@ -24,9 +24,7 @@ Practice writing your own code as you go along!
 
 ✅ Anyone curious about how websites work behind the scenes
 
-💡 Project Preview
-In the final session, you'll build a mini project using everything you’ve learned — creating a real-world layout using pure HTML and CSS. This is your chance to test your skills and create a piece you can show off in your portfolio!
 
-👨‍🏫 Instructor
-Made with ❤️ by Vikas Kumar
+Instructor
+Vikas Kumar
 MERN Stack Trainer | Full Stack Developer | 3× LinkedIn Top Voice – Web Development
