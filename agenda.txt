@@ -1,3 +1,1 @@
-Position Property (Static, relative, absolute, fixed and sticky)
-Keyframe for animation( animation name, duration, timing function, iteration count,direction) transition
 Media Query (@media min & max width, min & max height, orientation: landscape and portrait)
