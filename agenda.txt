@@ -1,1 +1,1 @@
-Media Query (@media min & max width, min & max height, orientation: landscape and portrait)
+display property
