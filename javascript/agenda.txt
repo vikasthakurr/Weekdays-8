@@ -1,0 +1,34 @@
+callback function
+closure
+currying
+higher order function
+javascript DOM
+DOM manipulation
+events in js
+event bubbling capturing and trickling
+event delegation (advanced implementation) 
+drawback of callback and its solution
+promises in js
+promise chaining and all functions
+drawback of promise
+async and await and fetch 
+call apply bind
+prototype(advanced implementation)
+local and session storage
+set time and interval
+dealing with API and its data handling
+Regex(advanced if time allow)
+virtual DOM
+
+intro to node js and its environment
+module and npm
+package and its versioning
+custom module and package making
+export named and default
+event loop
+
+
+intro to virtual dom and babel
+react working with babel
+react fibre
+react setup with vite
