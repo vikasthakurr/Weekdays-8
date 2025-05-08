@@ -1,5 +1,3 @@
-callback function
-closure
 currying
 higher order function
 javascript DOM
@@ -8,14 +6,10 @@ events in js
 event bubbling capturing and trickling
 event delegation (advanced implementation) 
 drawback of callback and its solution
-promises in js
-promise chaining and all functions
-drawback of promise
 async and await and fetch 
 call apply bind
 prototype(advanced implementation)
 local and session storage
-set time and interval
 dealing with API and its data handling
 Regex(advanced if time allow)
 virtual DOM

@@ -1,2 +1,1 @@
-console.log(result);
-// console.log(typeof result);
+console.log(myPromise);

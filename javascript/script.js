@@ -15,6 +15,52 @@
 // var res1 = sum(a, b);
 // console.log(res1);
 
+// const myPromise = new Promise((resolve, reject) => {
+//   let result = true;
+//   if (result) {
+//     resolve("success");
+//   } else {
+//     reject("failed");
+//   }
+// });
 
-  
+// myPromise
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .then((res) => {
+//     console.log("hii");
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
+// let promise1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject("failure");
+//     // console.log("hii");
+//   }, 2000);
+// });
+
+// // console.log(promise1);
+// promise1
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   })
+//   .finally(() => {
+//     console.log("process ended");
+//   });
+function outerfunction() {
+  var a = 10;
+  function inner() {
+    var a = 20;
+    console.log(a);
+  }
+  return inner;
+}
+var innerfunction = outerfunction();
+// console.log(innerfunction);
+innerfunction();
