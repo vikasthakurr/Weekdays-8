@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .child {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button id="btn">click me</button> -->
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+
+    <script>
+      //   const btn = document.querySelector("button");
+      //   btn.addEventListener("mouseover", (event) => {
+      //     alert("button was clicked");
+      //     console.log(event);
+      //   });
+      // console.log(btn);
+
+      const parent = document.querySelector(".parent");
+      const child = document.querySelector(".child");
+
+      parent.addEventListener("click", () => {
+        console.log("parent was clicked");
+      });
+
+      child.addEventListener(
+        "click",
+        () => {
+          console.log("child was clicked");
+          event.stopPropagation();
+        },
+        { capture: true }
+      );
+    </script>
+  </body>
+</html>

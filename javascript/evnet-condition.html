@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+      .box-1 {
+        background-color: blue;
+      }
+      .box-2 {
+        background-color: green;
+      }
+      .box-3 {
+        background-color: yellow;
+      }
+      .box-4 {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+    </div>
+
+    <script>
+      const container = document.querySelector(".container");
+      const box1 = document.querySelector(".box-1");
+      const box2 = document.querySelector(".box-2");
+      const box3 = document.querySelector(".box-3");
+      const box4 = document.querySelector(".box-4");
+
+      container.addEventListener("click", (event) => {
+        console.log("container was clicked");
+        console.log(event.target);
+      });
+
+      //   box1.addEventListener("click", () => {
+      //     console.log("box1 was clicked");
+      //   });
+
+      //   box2.addEventListener("click", () => {
+      //     consol.log("box2 was clicked");
+      //   });
+
+      //   box3.addEventListener("click", () => {
+      //     console.log("box3 was clicked");
+      //   });
+
+      //   box4.addEventListener("click", () => {
+      //     console.log("box4 was clicked");
+      //   });
+    </script>
+  </body>
+</html>

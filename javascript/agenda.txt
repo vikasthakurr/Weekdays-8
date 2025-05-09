@@ -1,4 +1,3 @@
-currying
 higher order function
 javascript DOM
 DOM manipulation
