@@ -1,6 +1,4 @@
-call apply bind
-postman and api
-async and await and fetch 
+ 
 dealing with API and its data handling
 template literals
 ToDo with DOM

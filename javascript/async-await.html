@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      async function fetchData() {
+        try {
+          const response = await fetch("https://fakestoreapi.in/api/products");
+
+          if (!response.ok) {
+            throw new Error("404 link not found");
+          }
+          const data = await response.json();
+          console.log(data);
+
+          if (data && data.products && Array.isArray(data.products)) {
+            const container = document.querySelector(".container");
+            container.innerHTML = "";
+            data.products.forEach((products) => {
+              const card = document.createElement("div");
+              card.classList.add("card");
+              card.innerHTML = `<img src=${products.image} alt=${products.title}>`;
+              card.innerHTML += `<h3>${products.title}</h3>`;
+              card.innerHTML += `<p>${products.price}</p>`;
+              container.appendChild(card);
+            });
+          }
+
+          console.log(data);
+          // return data;
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      // console.log(fetchData());
+      fetchData();
+    </script>
+  </body>
+</html>
