@@ -1,27 +1,22 @@
-higher order function
-javascript DOM
-DOM manipulation
-events in js
-event bubbling capturing and trickling
-event delegation (advanced implementation) 
-drawback of callback and its solution
-async and await and fetch 
 call apply bind
-prototype(advanced implementation)
-local and session storage
+postman and api
+async and await and fetch 
 dealing with API and its data handling
+template literals
+ToDo with DOM
+local and session storage
 Regex(advanced if time allow)
-virtual DOM
+virtual DOM 
 
 intro to node js and its environment
 module and npm
 package and its versioning
 custom module and package making
 export named and default
-event loop
 
 
 intro to virtual dom and babel
 react working with babel
 react fibre
 react setup with vite
+ 
