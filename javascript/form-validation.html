@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="" id="name" placeholder="Enter your name" />
+      <input type="email" name="" id="email" placeholder="Enter your email" />
+      <input
+        type="number"
+        name=""
+        id="mobile"
+        placeholder="Enter your number"
+      />
+      <input
+        type="password"
+        name=""
+        id="password"
+        placeholder="Enter your password"
+      />
+      <button type="submit" id="submit" onclick="submitForm()">submit</button>
+    </form>
+    <script>
+      function submitForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let mobile = document.getElementById("mobile").value;
+        let password = document.getElementById("password").value;
+
+        if (name === "" || email === "" || mobile === "" || password === "") {
+          alert("Please fill all the fields");
+        } else {
+          alert("form submitted successfully");
+        }
+      }
+    </script>
+  </body>
+</html>

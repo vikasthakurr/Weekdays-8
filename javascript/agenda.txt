@@ -1,9 +1,6 @@
- 
-dealing with API and its data handling
-template literals
+
 ToDo with DOM
 local and session storage
-Regex(advanced if time allow)
 virtual DOM 
 
 intro to node js and its environment

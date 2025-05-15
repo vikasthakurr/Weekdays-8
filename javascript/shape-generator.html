@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shape Generator</title>
+    <style>
+      .boxes {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .shape {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" name="quantity" id="quantity" />
+      <input type="color" name="shapeColor" id="shapeColor" />
+      <select name="shape" id="shape">
+        <option value="circle">Circle</option>
+        <option value="square">Square</option>
+      </select>
+      <button id="generate" onclick="generateShapes()">Generate</button>
+    </div>
+    <div class="boxes"></div>
+
+    <script>
+      function generateShapes() {
+        let quantity = document.getElementById("quantity").value;
+        let shapeColor = document.getElementById("shapeColor").value;
+        let shape = document.getElementById("shape").value;
+        let container = document.querySelector(".container");
+        let boxes = document.querySelector(".boxes");
+
+        // container.innerHTML = "";
+
+        for (let i = 0; i < quantity; i++) {
+          let shapeElement = document.createElement("div");
+          shapeElement.classList.add("shape");
+          shapeElement.style.backgroundColor = shapeColor;
+          if (shape === "circle") {
+            shapeElement.style.borderRadius = "50%";
+          }
+          boxes.appendChild(shapeElement);
+        }
+      }
+    </script>
+  </body>
+</html>
