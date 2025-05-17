@@ -1,11 +1,5 @@
 
-ToDo with DOM
-local and session storage
 virtual DOM 
-
-intro to node js and its environment
-module and npm
-package and its versioning
 custom module and package making
 export named and default
 
