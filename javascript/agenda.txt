@@ -1,11 +1,7 @@
 
-virtual DOM 
-custom module and package making
-export named and default
-
-
 intro to virtual dom and babel
 react working with babel
 react fibre
 react setup with vite
+virtual dom and state bus
  
