@@ -3,7 +3,7 @@ import React from 'react'
 const Nav = () => {
   return (
     <div>
-      hii this is nav
+      hii this is nav component rendered based on condition
     </div>
   )
 }
