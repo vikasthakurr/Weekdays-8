@@ -1,7 +1,6 @@
-useEffect and cleanup function
-useRef
-useMemo
-useCallback
 useContext
 Custom Hooks (localstorage)
+routing in react
+link vs anchor
+global state management
 
