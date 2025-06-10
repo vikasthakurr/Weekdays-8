@@ -1,3 +1,10 @@
+restful architecture
+api building
+redux setup
+protected routes
+authentication
+intro to mongodb
+mongodb setup (atlas and compass)
 
 
 
