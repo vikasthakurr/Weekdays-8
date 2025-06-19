@@ -1,10 +1,14 @@
+middleware(application level, route level, error handling,custom middleware)
 restful architecture
 api building
+authentication
+project setup
 redux setup
 protected routes
-authentication
+
 intro to mongodb
 mongodb setup (atlas and compass)
+mvc
 
 
 
