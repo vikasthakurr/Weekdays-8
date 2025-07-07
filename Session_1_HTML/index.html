@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .child {
+        background-color: blue;
+        width: calc(50% * 2px);
+        height: calc(50% - 20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">child</div>
+    </div>
+  </body>
+</html>

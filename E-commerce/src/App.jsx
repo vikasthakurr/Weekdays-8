@@ -1,11 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
+import NavBar from "./components/NavBar";
+import Cart from "./components/Cart";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import Cart from "./components/Cart";
-import Profile from "./components/Profile";
+import ProtectedRoutes from "./components/ProtectedRoutes";
+import CheckoutPage from "./components/CheckoutPage";
 
 const App = () => {
   return (
@@ -13,11 +14,36 @@ const App = () => {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* public routes */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/profile" element={<Profile />} />
+
+          {/* protected routes */}
+          <Route
+            path="/cart"
+            element={
+              <ProtectedRoutes>
+                <Cart />
+              </ProtectedRoutes>
+            }
+          />
+          {/* protected routes */}
+          <Route
+            path="/"
+            element={
+              <ProtectedRoutes>
+                <Home />
+              </ProtectedRoutes>
+            }
+          />
+          <Route
+            path="/CheckoutPage"
+            element={
+              <ProtectedRoutes>
+                <CheckoutPage />
+              </ProtectedRoutes>
+            }
+          />
         </Routes>
       </Router>
     </>

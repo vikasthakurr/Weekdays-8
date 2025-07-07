@@ -1,11 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  increaseQuantity,
-  decreaseQuantity,
-  clearCart,
-} from "../redux/cartSlice";
+import { increaseQuantity, decreaseQuantity } from "../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
+import CheckoutPage from "./CheckoutPage";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -19,9 +16,17 @@ const Cart = () => {
   );
 
   const handleCheckout = () => {
-    alert("payment successful and now clearing the cart");
-    dispatch(clearCart());
-    navigate("/");
+    if (cart.length === 0) {
+      alert(
+        "Your cart is empty. Please add items to your cart before proceeding to checkout."
+      );
+      return;
+    }
+
+    navigate("/CheckoutPage");
+    // Redirect to the checkout page
+
+    // Clear the cart before proceeding
   };
 
   return (
